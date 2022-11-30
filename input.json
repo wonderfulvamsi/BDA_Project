@@ -1,0 +1,26 @@
+[
+  {
+    "tweetId": "001",
+    "userName": "Sid",
+    "tweet": "Cats are totally amazing! ♥",
+    "eventTimestamp": "2022-11-02 02:09:00"
+  },
+  {
+    "tweetId": "002",
+    "userName": "Vamzi",
+    "tweet": "Seems somebody had a good meal! @KFC #Foodie",
+    "eventTimestamp": "2022-11-02 03:09:11"
+  },
+  {
+    "tweetId": "003",
+    "userName": "Sudipa",
+    "tweet": "setting up my twitter account.",
+    "eventTimestamp": "2022-11-04 02:09:00"
+  },
+  {
+    "tweetId": "004",
+    "userName": "Hemanth",
+    "tweet": "I hate @trump!",
+    "eventTimestamp": "2022-11-06 01:09:00"
+  }
+]
