@@ -1,9 +1,9 @@
-# kafka-nodejs-tutorial
-# A sample application using Kafka, Node.js and Docker
+# kafka-nodejs-project
+# Sentiment analysis on tweets using Kafka, Node.js and Docker
 
 #### Table of Content
 * [1. About Kafka Streaming](#AboutKafkaStreaming)
-* [2. Use case - track travellers who may infected by Coronavirus](#usecase)
+* [2. Use case - Sentiment analysis on tweets](#usecase)
 * [3. Build local Kafka environemnt using Docker and Container](#build_local_kafka_environemnt)
 * [4. Run the application](#run_the_application)
 * [References](#references)
@@ -40,13 +40,13 @@ I use KafkaJs in this example. The main reason is it has better documentation th
 
 
 <a name="usecase"></a>
-## 2. Use case - track travellers who may infected by Coronavirus
+## 2. Use case - Sentiment analysis on tweets
 
-We are going to build an applicaiton, to track petential travellers who may have been infected by Coronavirus.
+We are going to build an applicaiton, to perform Sentiment analysis on tweets by various users.
 
-1. We check travellers temperature at major airports.
-2. Temperature and traveller's personal infomration are sent to the Kafka queue (as producer). Note every airport is a prodcuer.
-3. We have another app check every message sent to the queue (near real time), and alert is triggered if we a passenger has higher temperature and has overseas travel history.
+1. Our goal is to make sure the platform is free of hate speech.
+2. tweets and user's account infomration are sent to the Kafka queue (as producer). Note every user is a prodcuer.
+3. We have another app to perform the sentiment analysis (near real time), and alert is triggered if it uses hate speech.
 
 
 <a name="build_local_kafka_environemnt"></a>
@@ -115,7 +115,7 @@ To check if containers are up and running:
 billhang@bills-mbp ~ % docker container ls
 CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                                NAMES
 67cd2b7e267f        wurstmeister/zookeeper        "/bin/sh -c '/usr/sb…"   35 hours ago        Up 3 minutes        22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp   kafka-nodejs-tutorial_zookeeper_1
-d1b79bcb60be        kafka-nodejs-tutorial_kafka   "start-kafka.sh"         35 hours ago        Up 3 minutes        0.0.0.0:9092->9092/tcp                               kafka-nodejs-tutorial_kafka_1
+d1b79bcb60be        kafka-nodejs-project_kafka   "start-kafka.sh"         35 hours ago        Up 3 minutes        0.0.0.0:9092->9092/tcp                               kafka-nodejs-tutorial_kafka_1
 billhang@bills-mbp ~ %
 
 ```
