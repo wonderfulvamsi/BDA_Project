@@ -5,7 +5,6 @@
 * [1. About Kafka Streaming](#AboutKafkaStreaming)
 * [2. Use case - Sentiment analysis on tweets](#usecase)
 * [3. Build local Kafka environemnt using Docker and Container](#build_local_kafka_environemnt)
-* [4. Run the application](#run_the_application)
 * [References](#references)
 
 <a name="AboutKafkaStreaming"></a>
